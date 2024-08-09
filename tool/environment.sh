@@ -1,25 +1,21 @@
-#!/bin/bash
+# 更改为您当前使用的目录路径
+export TensorRT_Lib=/home/ubuntu/TensorRT-8.6.1.6/targets/x86_64-linux-gnu/lib
+export TensorRT_Inc=/home/ubuntu/TensorRT-8.6.1.6/targets/x86_64-linux-gnu/include
+export TensorRT_Bin=/home/ubuntu/TensorRT-8.6.1.6/targets/x86_64-linux-gnu/bin
+export CUDA_Lib=/usr/local/cuda-12.1/targets/x86_64-linux/lib
+export CUDA_Inc=/usr/local/cuda-12.1/targets/x86_64-linux/include
+export CUDA_Bin=/usr/local/cuda-12.1/bin
+export CUDA_HOME=/usr/local/cuda-12.1
+# 
+#export CUDNN_Lib=/path/to/cudnn/lib
 
-export TensorRT_Lib=/home/Mandy/code/TensorRT-8.6.1.6/lib
-export TensorRT_Inc=/home/Mandy/code/TensorRT-8.6.1.6/include
-export TensorRT_Bin=/home/Mandy/code/TensorRT-8.6.1.6/bin
-
-export CUDA_Lib=/usr/local/cuda/lib64
-export CUDA_Inc=/usr/local/cuda/include
-export CUDA_Bin=/usr/local/cuda/bin
-export CUDA_HOME=/usr/local/cuda/
-
-export CUDNN_Lib=/usr/local/cuda/lib64
-
-
-# resnet50/resnet50int8/swint
+# resnet18/resnet18int8/resnet18int8head
 export DEBUG_MODEL=resnet18int8
 
 # fp16/int8
 export DEBUG_PRECISION=int8
 export DEBUG_DATA=example-data
 export USE_Python=OFF
-
 # check the configuration path
 # clean the configuration status
 export ConfigurationStatus=Failed

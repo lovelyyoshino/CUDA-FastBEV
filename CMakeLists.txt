@@ -28,10 +28,10 @@ include_directories(
   $ENV{TensorRT_Inc}
   $ENV{Python_Inc}
   # ${OpenCV_INCLUDE_DIRS}
-  ../dependencies/stb
-  ../dependencies/pybind11/include
-  ../libraries/cuOSD/src
-  ../libraries/3DSparseConvolution/libspconv/include
+  ./dependencies/stb
+  ./dependencies/pybind11/include
+  ./libraries/cuOSD/src
+  ./libraries/3DSparseConvolution/libspconv/include
   src/common
   src/
 )
@@ -52,8 +52,8 @@ file(GLOB_RECURSE CORE_FILES
 )
 
 file(GLOB_RECURSE VISUALIZE_FILES 
-  ../libraries/cuOSD/src/*.cpp
-  ../libraries/cuOSD/src/*.cu
+  ./libraries/cuOSD/src/*.cpp
+  ./libraries/cuOSD/src/*.cu
   src/common/visualize.cu
 )
 
